@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+    <body id="top">
+        <div id="todo_div">
+          <!-- Scroll Indicator -->
+          <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+          </div>
+          <div class="container" id="mainHeading_counter">
+            <h2>Todo List</h2>
+            <h3>Task in Due : <span id="item_count">0</span></h3>
+          </div>
+          <input type="text" id="todo_item" placeholder="Enter any task " />
+          <br />
+          <button id="add_btn" onclick="addTodo()">Add</button>
+          <button id="deleteAll_btn" onclick="deleteAll()">Delete All</button>
+        </div>
+    
+        <div id="items_div">
+          <ul id="list"></ul>
+        </div>
+        <a class="top" href="#top"><i class="fas fa-arrow-up"></i></a>
+    
+        <script src="./app.js"></script>
+        <!-- fontawesome Kit -->
+        <script
+          src="https://kit.fontawesome.com/dfd0da9182.js"
+          crossorigin="anonymous"
+        ></script>
+        <!-- Bootstrap -->
+        <script
+          src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"
+        ></script>
+        <script
+          src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+          integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+          crossorigin="anonymous"
+  
+          ></script>
+          <script src="app.js"></script>
+      </body>
+  
+
+</html>

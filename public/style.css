@@ -1,0 +1,155 @@
+@font-face {
+  font-family: Font;
+  src: url("DancingScript-VariableFont_wght\ \(1\).ttf");
+}
+::selection {
+  color: rgb(255, 255, 255);
+  background-color: rgb(29, 37, 143);
+}
+::placeholder {
+  color: rgb(46, 48, 46);
+}
+.progress-container {
+  width: 100%;
+  height: 4px;
+  background: rgb(14, 10, 243);
+}
+.progress-bar {
+  height: 4px;
+  background: rgb(29, 143, 35);
+  width: 0%;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  color: rgb(46, 11, 247);
+  font-family: Font;
+  
+}
+div#todo_div {
+  text-align: center;
+  margin-bottom: 10px;
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+div#mainHeading_counter {
+  color: black;
+  box-shadow: 5px 5px 10px 2px rgb(219, 218, 218);
+  
+  background-image: linear-gradient(
+    to left,
+    rgb(77, 14, 114),
+    rgb(243, 10, 204)
+  );
+
+}
+*:focus { outline:0 !important; }
+h2 {
+  
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  color: rgb(247, 250, 253);
+  font-weight: bolder;
+}
+h3 {
+  font-size: 20px;
+  margin: 0;
+  padding: 10px;
+  color: aliceblue;
+  font-weight: bolder;
+}
+
+input,
+select,
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+}
+input#todo_item {
+  width: 50%;
+  padding: 10px;
+  margin: 20px 0;
+  box-shadow: 5px 5px 10px 2px #888888;
+  border-radius: 5px;
+  border: none;
+  font-size: large;
+}
+button {
+  font-family: "Times New Roman", Times, serif;
+  background-image: linear-gradient(
+    to left,
+    rgb(107, 29, 143),
+    rgb(150, 10, 243)
+  );
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: aliceblue;
+
+}
+button:hover {
+ background-image: aliceblue;
+ color:rgb(107, 29, 143) ;
+ 
+}
+button#add_btn,
+button#deleteAll_btn {
+  padding: 10px 20px;
+  box-shadow: 3px 3px 10px 2px #888888;
+  margin: 0 20px;
+  font-size: 20px;
+}
+li.todoList {
+  list-style: decimal;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+button.editBtn,
+button.deleteBtn {
+  font-size: 20px;
+  padding: 5px 10px;
+  margin: 0 10px;
+}
+a.top {
+  color: rgb(45, 10, 243);
+  position: fixed;
+  right: 30px;
+  bottom: 15px;
+  font-size: 2.5rem;
+}
+a.top:hover {
+  color: rgb(134, 29, 143);
+}
+
+/* for responsiveness */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+  button#add_btn,
+  button#deleteAll_btn {
+    font-size: 17px;
+    padding: 10px 20px;
+  }
+  button.editBtn,
+  button.deleteBtn {
+    font-size: 15px;
+    padding: 5px 10px;
+  }
+  input#todo_item {
+    font-size: 15px;
+  }
+  li.todoList {
+    font-size: 1rem;
+  }
+  a.top {
+    font-size: 1.5rem;
+  }
+}
